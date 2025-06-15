@@ -31,7 +31,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	while (s[i])
 	{
-		result = f(i, s[i]);
+		result[i] = f(i, s[i]);
 		i++;
 	}
 	result[i] = '\0';
