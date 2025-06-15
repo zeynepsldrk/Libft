@@ -30,11 +30,11 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	{
 		len = size;
 	}
-	subst = (char *)malloc(sizeof(char) * (len + 1));
-	if (!subst)
+	subs = (char *)malloc(sizeof(char) * (len + 1));
+	if (!subs)
 	{
 		return (NULL);
 	}
-	ft_strlcpy(subst, s + start, len + 1);
-	return (subst);
+	ft_strlcpy(subs, s + start, len + 1);
+	return (subs);
 }
